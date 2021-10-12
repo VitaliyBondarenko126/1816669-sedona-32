@@ -8,13 +8,13 @@
     <header class="page-header">
         <nav class="page-navigation"> <!--Навигация-->
           <ul class="navigation-list">
-            <li class="navigation-items">
-              <span class="active-page">Главная</span>
+            <li class="navigation-item">
+              <a href="#">Главная</a>
             </li>
-            <li class="navigation-items">
-              <a href="#"><sub>О Седоне</sub></a><!--Здесь будет ссылка на страницу "о нас"-->
+            <li class="navigation-item">
+              <a href="#">О Седоне</a><!--Здесь будет ссылка на страницу "о нас"-->
             </li>
-            <li class="navigation-items">
+            <li class="navigation-item">
               <a href="catalog.html"><sub>Гостиницы Седоны</sub></a> 
             </li>
           </ul>
@@ -23,22 +23,16 @@
           <img src="#" alt="Картинка-Логотип">
         </div>
         <section class="user-menu"><!--Секция в хедере для поиска,отзывов и кнопки("user-menu" пока рабочее название, лучше ничего не придумал)-->
+          <h2 class="visually-hidden">Меню пользователя</h2>
           <ul class="user-menu-list">
-            <li class="user-menu-items search">
-              <form action="https://htmlacademy.ru" enctype="post">
-                <input type="text"><sub class="visually-hidden">Поиск Гостиницы</sub><!--Я пока не понимаю как сделать ссылку на модальное окно, поэтому оставлю так-->
-              </form>
+            <li class="user-menu-item">
+              <a class="user-menu-link" href="#"><span class="visually-hidden">Поисковая строка</span></a>
             </li>
-            <li class="user-menu-items-like">
-                <a href="#"> <!--Переход на страницу отзывы-->
-                  <img src="#">
-                  <span class="visually-hidden">Отзывы</span>
-                </a>
+            <li class="user-menu-item">
+              <a class="user-menu-link" href="#"><span class="visually-hidden">Отзывы</span></a>
             </li>
-            <li class="user-menu-items-reserve">  <!--Не совсем понимаю смысл этой кнопки и куда она должна перенаправлять-->
-              <form action="https://htmlacademy.ru" enctype="post">
-                <button>хочу сюда!</sub></button>
-              </form>
+            <li class="user-menu-item">
+              <a class="user-menu-link-buttom" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </section>
@@ -81,9 +75,8 @@
       </section>
       <section class="catalog-control-panel">
         <h2 class="visually-hidden">Параметры сортировки каталога</h2>
-        <span class="derectory-header">Количество гостиниц на странице: 38</span>
+        <b class="derectory-header">Количество гостиниц на странице: 38</b>
         <form class="sorting-type">
-          <label class="visually-hidden" for="sorting">Сортировка</label>
           <select class="sorting-control">
             <option class="low-price">Сначала дешевые</option>
             <option class="hight-price">Сначала дорогие</option>
@@ -105,19 +98,16 @@
       <section class="hotels-group">
         <h2 class="visually-hidden">Каталог отелей</h2>
         <div class="hotel-card">
-          <a href="#"><!--Должно вести на стрраницу товара-->
+          <a href="#"><!--картинка и название должны вести на страницу товара-->
             <img src="#" alt="Amara Resort & Spa">
             <h3 class="hotel-card-name">Amara Resort & Spa</h3>
           </a>
           <span class="hotel-card-type">Гостиница</span>
           <span class="hotel-card-price">от 4000</span>
-          <img class="hotel-card-stars" src="#">
-          <span class="hotel-card-reting">Рейтинг: 8,5</span>
-          <a class="hotel-card-button-details">
-            <button type="button">Подробнее</button>
-          </a>
-          <form class="hotel-card-button-favorites" action="https://htmlacademy.ru">
-            <button>В избранное</button>
+          <span class="hotel-card-stars visually-hidden">Звезды сервиса</span>
+          <span class="hotel-card-reting visually-hidden">Рейтинг: 8,5</span>
+          <a class="hotel-card-button-details" href="#">Подробнее</a>
+          <a class="hotel-card-button-favorites" href="#">в избранное</a>
           </form>
         </div>
         <div class="hotel-card">
@@ -127,14 +117,10 @@
           </a>
           <span class="hotel-card-type">Мотель</span>
           <span class="hotel-card-price">от 3000</span>
-          <img class="hotel-card-stars" src="#">
-          <span class="hotel-card-reting">Рейтинг: 8,9</span>
-          <a class="hotel-card-button-details">
-            <button type="button">Подробнее</button>
-          </a>
-          <form class="hotel-card-button-favorites" action="https://htmlacademy.ru">
-            <button>В избранное</button>
-          </form>
+          <span class="hotel-card-stars visually-hidden">Звезды сервиса</span>
+          <span class="hotel-card-reting visually-hidden">Рейтинг: 8,9</span>
+          <a class="hotel-card-button-details" href="#">Подробнее</a>
+          <a class="hotel-card-button-favorites" href="#">в избранное</a>
         </div>
         <div class="hotel-card">
           <a href="#"><!--Должно вести на стрраницу товара-->
@@ -143,14 +129,10 @@
           </a>
           <span class="hotel-card-type">Аппартаменты</span>
           <span class="hotel-card-price">от 2000</span>
-          <img class="hotel-card-stars" src="#">
-          <span class="hotel-card-reting">Рейтинг: 9,2</span>
-          <a class="hotel-card-button-details">
-            <button type="button">Подробнее</button>
-          </a>
-          <form class="hotel-card-button-favorites" action="https://htmlacademy.ru">
-            <button>В избранное</button>
-          </form>
+          <span class="hotel-card-stars visually-hidden">Звезды сервиса</span>
+          <span class="hotel-card-reting visually-hidden">Рейтинг: 9,2</span>
+          <a class="hotel-card-button-details" href="#">Подробнее</a>
+          <a class="hotel-card-button-favorites" href="#">в избранное</a>
         </div>
         <div class="hotel-card">
           <a href="#"><!--Должно вести на стрраницу товара-->
@@ -159,13 +141,11 @@
           </a>
           <span class="hotel-card-type">Гостиница</span>
           <span class="hotel-card-price">от 3000</span>
-          <img class="hotel-card-stars" src="#">
-          <span class="hotel-card-reting">Рейтинг: 9,2</span>
+          <span class="hotel-card-stars visually-hidden">Звезды сервиса</span>
+          <span class="hotel-card-reting visually-hidden">Рейтинг: 9,2</span>
           <a class="hotel-card-button-details">
-            <button type="button">Подробнее</button>
-          </a>
-          <form class="hotel-card-button-favorites" action="https://htmlacademy.ru">
-            <button>В избранное</button>
+            <a class="hotel-card-button-details" href="#">Подробнее</a>
+            <a class="hotel-card-button-favorites" href="#">в избранное</a>
           </form>
         </div>
       </section>

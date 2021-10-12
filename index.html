@@ -6,16 +6,16 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="header-navigation">
+      <nav class="page-navigation"> <!--Навигация-->
         <ul class="navigation-list">
           <li class="navigation-item">
-            <span class="active-page">Главная</span>
+            <a class="navigation-link" href="#">Главная</a>
           </li>
           <li class="navigation-item">
-            <a href="#"><sub>О Седоне</sub></a><!--Здесь будет ссылка на страницу "о нас"-->
+            <a class="navigation-link" href="#">О Седоне</a><!--Здесь будет ссылка на страницу "о нас"-->
           </li>
           <li class="navigation-item">
-            <a href="catalog.html"><sub>Гостиницы Седоны</sub></a> 
+            <a class="navigation-link" href="catalog.html">Гостиницы Седоны</a> 
           </li>
         </ul>
       </nav>
@@ -23,19 +23,16 @@
         <img src="#" alt="Картинка-Логотип">
       </div>
       <section class="user-menu"><!--Секция в хедере для поиска,отзывов и кнопки("user-menu" пока рабочее название, лучше ничего не придумал)-->
+        <h2 class="visually-hidden">Меню пользователя</h2>
         <ul class="user-menu-list">
-          <li class="user-menu-items search">
-            <form action="https://htmlacademy.ru" enctype="post">
-              <input type="text"><sub class="visually-hidden">Поиск Гостиницы</sub><!--Я пока не понимаю как сделать ссылку на модальное окно, поэтому оставлю так-->
-            </form>
+          <li class="user-menu-item">
+            <a class="user-menu-link" href="#"><span class="visually-hidden">Поисковая строка</span></a>
           </li>
-          <li class="user-menu-item-like"> <!--Элемент для перехода на страницу "Наши отзывы". Логически, должно быть так, я предполагаю-->
-             <a href="#"><img src="=" class="item-revievs-logo"></a>
+          <li class="user-menu-item">
+            <a class="user-menu-link" href="#"><span class="visually-hidden">Отзывы</span></a>
           </li>
-          <li class="user-menu-items reserve">
-            <form action="https://htmlacademy.ru" enctype="post">
-              <button>хочу сюда!</sub></button>
-            </form>
+          <li class="user-menu-item">
+            <a class="user-menu-link-buttom" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </section>
@@ -45,79 +42,74 @@
       <section class="presentation">
         <h2 class="visually-hidden">Презентация Городка</h2>
         <img="#" alt="Большое понорамное фото гор">
-        <span class="presentation-slogan">Седона-недольшой городок в Аризоне, заслуживающий большего!</span>
+        <p class="presentation-slogan">Седона-недольшой городок в Аризоне, заслуживающий большего!</p>
       </section>
       <section class="benefits">
         <h2 class="visually-hidden">Преимущества Городка</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-        <article class="benefits-block-1"><!--Отдельный класс для преимущества с понорамным фото №1-->
-          <span class="benefits-block-name">Настоящий городок</span><br>
-          <span>-№1-</span>
-          <p>Седона — не аттракцион для туристов, там течёт 
+        <p class="benefits-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <article class="benefits-block"><!--Отдельный класс для преимущества с понорамным фото-->
+          <h3 class="benefits-block-name">Настоящий городок</h3>
+          <span class="benefits-number">-№1-</span>
+          <p class="benefits-text">Седона — не аттракцион для туристов, там течёт 
             своя жизнь</p>
-          <img src="#" alt="Фото улицы городка">
+          <img class="benefits-block-foto" src="#" alt="Фото улицы городка">
         </article>
-        <h1 class="visually-hidden">Настоящий,живой город.</h1>
-            <div class="benefits-div-1"><!--Отдельный класс для преимуществ с картинкой №1-->
+            <div class="benefits-div"><!--Отдельный класс для преимуществ с картинкой-->
               <img src="#"><br>
-              <span class="benefits-name-div">Жилье</span><br>
-              <p>Рекомендуем пожить 
+              <h3 class="benefits-div-name">Жилье</h3>
+              <p class="benefits-div-text">Рекомендуем пожить 
                 в настоящем мотеле, 
                 всё как в кино!</p>
             </div>
-            <div class="benefits-div-2"><!--Отдельный класс для преимуществ с картинкой №2-->
+            <div class="benefits-div"><!--Отдельный класс для преимуществ с картинкой-->
               <img src="#"><br>
-              <span class="benefits-name-div">Еда</span><br>
-              <p>Всегда заказывайте
+              <h3 class="benefits-div-name">Еда</h3>
+              <p class="benefits-div-text">Всегда заказывайте
                 топовый фирменный бургер, вы не разочаруетесь!</p>
             </div>
-            <div class="benefits-div-3"><!--Отдельный класс для преимуществ с картинкой №3-->
+            <div class="benefits-div"><!--Отдельный класс для преимуществ с картинкой-->
               <img src="#"><br>
-              <span class="benefits-name-div">Сувениры</span><br>
-              <p>Не только китайского, 
+              <h3 class="benefits-div-name">Сувениры</h3>
+              <p class="benefits-div-text">Не только китайского, 
                 но и настоящего местного производства!</p>
             </div>
-        <article class="benefits-block-2"><!--Отдельный класс для преимущества с понорамным фото №2-->
-          <h1 class="visually-hidden">Скальный мост</h1>
-          <span class="benefits-block-name">Там есть мост дьявола</span><br>
-          <sub>-№2-</sub><br>
-          <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img src="#" alt="Фото Моста Дьявола">
-        </article>
-            <div class="benefits-div-4"><!--Отдельный класс для преимуществ с картинкой №4-->
-              <img src="#"><br>
-              <span class="benefits-name">Небольшая площадь</span><br>
-              <span>-№3-</span><br>
-              <p>Все достопримечательности 
+            </div>
+            <article class="benefits-block"><!--Отдельный класс для преимущества с понорамным фото-->
+              <h3 class="benefits-block-name">Там есть
+                мост дьявола</h3>
+              <span class="benefits-number">-№2-</span>
+              <p class="benefits-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <img class="benefits-block-foto" src="#" alt="Фото каменного моста дьявола">
+            </article>
+            <div class="benefits-div-num"><!--Отдельный класс для преимуществ без картинки, с номером-->
+              <h3 class="benefits-num-name">Небольшая площадь</h3>
+              <span class="benefits-div-num-number">-№3-</span>
+              <p class="benefits-div-num-text">Все достопримечательности 
                 находятся очень близко</p>
             </div>
-            <div class="benefits-div-5"><!--Отдельный класс для преимуществ с картинкой №5-->
-              <img src="#"><br>
-              <span class="benefits-name">Красивая дорога</span><br>
-              <span>-№4-</span><br>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <div class="benefits-div-num"><!--Отдельный класс для преимуществ без картинки, с номером-->
+              <h3 class="benefits-num-name">Красивая дорога</h3>
+              <span class="benefits-div-num-number">-№4-</span>
+              <p class="benefits-div-num-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
-            <div class="benefits-div-6"><!--Отдельный класс для преимуществ с картинкой №6-->
-              <img src="#"><br>
-              <span class="benefits-name">Мало туристов</span><br>
-                <span>-№5-</span><br>
-              <p>Большинство едет в Гранд Каньон и толпится там</p>
+            <div class="benefits-div-num"><!--Отдельный класс для преимуществ без картинки, с номером-->
+              <h3 class="benefits-num-name">Мало туристов</h3>
+              <span class="benefits-div-num-number">-№5-</span>
+              <p class="benefits-div-num-text">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
       </section>
         <section class="search-catalog"><!--Поиск по каталогу,не уверен что название подходящее, но лучше пока не придумал-->
-          <h1 class="visually-hidden">Забронируйте отель уже сейчас</h1>
-          <span>Заинтересовались?</span><br>
-          <p>Укажите предполагаемые даты поездки,
+          <h2 class="visually-hidden">Забронируйте отель уже сейчас</h2>
+          <b class="search-catalog-name">Заинтересовались?</b>
+          <p class="search-catalog-text">Укажите предполагаемые даты поездки,
             и мы покажем вам лучшие предложения гостиниц в Седоне.
           </p>
-          <a href="catalog.html"><button class="botton-search-catalog">Поиск гостиницы в Седоне</button></a>
+          <a class="search-catalog-button" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
         <section class="newsletter">
-          <h1 class="visually-hidden">Подписка на рассылку</h1>
-          <span>Подпишитесь на рассылку</span>
-          <p>Только полезная информация и никакого спама,
-            честное бойскаутское!
-            </p>
+          <h2 class="visually-hidden">Подписка на рассылку</h2>
+          <b class="newsletter-name">Подпишитесь на рассылку</b>
+          <p class="newsletter-text">Только полезная информация и никакого спама,честное бойскаутское!</p>
           <form action="https://htmlacademy.ru" method="GET">
             <input type="email" name="user-mail" value="Ваш e-mail">
             <input type="submit" value="подписаться">
