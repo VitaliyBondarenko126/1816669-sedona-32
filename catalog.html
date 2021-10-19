@@ -3,45 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны.</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 <body>
-    <header class="page-header">
-        <nav class="page-navigation"> <!--Навигация-->
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a href="#">Главная</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#">О Седоне</a><!--Здесь будет ссылка на страницу "о нас"-->
-            </li>
-            <li class="navigation-item">
-              <a href="catalog.html"><sub>Гостиницы Седоны</sub></a> 
-            </li>
-          </ul>
-        </nav>
-        <div class="head-logo"><!--отдельный див для маленького лого в центре хедера(или не стоит? просто img оставить? Мне показалось что так проще будет сетку строить.)-->
-          <img src="#" alt="Картинка-Логотип">
-        </div>
-        <section class="user-menu"><!--Секция в хедере для поиска,отзывов и кнопки("user-menu" пока рабочее название, лучше ничего не придумал)-->
-          <h2 class="visually-hidden">Меню пользователя</h2>
-          <ul class="user-menu-list">
-            <li class="user-menu-item">
-              <a class="user-menu-link" href="#"><span class="visually-hidden">Поисковая строка</span></a>
-            </li>
-            <li class="user-menu-item">
-              <a class="user-menu-link" href="#"><span class="visually-hidden">Отзывы</span></a>
-            </li>
-            <li class="user-menu-item">
-              <a class="user-menu-link-buttom" href="#">Хочу сюда!</a>
-            </li>
-          </ul>
-        </section>
+  <header class="page-header">
+    <nav class="page-navigation"> <!--Навигация-->
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О Седоне</a><!--Здесь будет ссылка на страницу "о нас"-->
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="catalog.html">Гостиницы Седоны</a> 
+        </li>
+      </ul>
+    </nav>
+    <div class="head-logo"><!--отдельный див для маленького лого в центре хедера-->
+      <img src="img/icon/logo-header.svg" alt="Картинка-Логотип">
+    </div>
+    <section class="user-menu"><!--Секция в хедере для поиска,отзывов и кнопки("user-menu" пока рабочее название, лучше ничего не придумал)-->
+      <h2 class="visually-hidden">Меню пользователя</h2>
+      <ul class="user-menu-list">
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="#"><span class="visually-hidden">Поисковая строка</span></a>
+        </li>
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="#"><span class="visually-hidden">Отзывы</span></a>
+        </li>
+        <li class="user-menu-item">
+          <a class="user-menu-link-buttom" href="#">Хочу сюда!</a>
+        </li>
+      </ul>
+    </section>
       </header>
       <main>
         <h1 class="visually-hidden">Каталог Гостиниц Седоны</h1>
         <section class="option-hotels">
           <h1> Гостиницы Седоны</h1>
-          <a href="index.html"><img class="hotels-logo"src="#" alt="Переход на главную"></a><span class="active-page">Гостиницы</span>
+          <a href="index.html"><img class="hotels-logo"src="#" alt="Переход на главную">
+          <img src="img/icon/arrow.svg" width="5" height="8">
+          </a><span class="active-page">Гостиницы</span>
           <form class="option-hotels-group" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="option-hotels-title">
               <legend>Инфраструктура:</legend>
@@ -99,7 +102,7 @@
         <h2 class="visually-hidden">Каталог отелей</h2>
         <div class="hotel-card">
           <a href="#"><!--картинка и название должны вести на страницу товара-->
-            <img src="#" alt="Amara Resort & Spa">
+            <img src="img/Amara-resort.jpg" width="180" height="120" alt="Amara Resort & Spa">
             <h3 class="hotel-card-name">Amara Resort & Spa</h3>
           </a>
           <span class="hotel-card-type">Гостиница</span>
@@ -112,7 +115,7 @@
         </div>
         <div class="hotel-card">
           <a href="#"><!--Должно вести на стрраницу товара-->
-            <img src="#" alt="Desert Quail Inn">
+            <img src="img/desert-quail.jpg" width="180" height="120" alt="Desert Quail Inn">
             <h3 class="hotel-card-name">Desert Quail Inn</h3>
           </a>
           <span class="hotel-card-type">Мотель</span>
@@ -124,7 +127,7 @@
         </div>
         <div class="hotel-card">
           <a href="#"><!--Должно вести на стрраницу товара-->
-            <img src="#" alt="Villas at Poco Diablo">
+            <img src="img/vilas-at-poco.jpg" width="180" height="120" alt="Villas at Poco Diablo">
             <h3 class="hotel-card-name">Villas at Poco Diablo</h3>
           </a>
           <span class="hotel-card-type">Аппартаменты</span>
@@ -136,7 +139,7 @@
         </div>
         <div class="hotel-card">
           <a href="#"><!--Должно вести на стрраницу товара-->
-            <img src="#" alt="GreenTree Inn">
+            <img src="img/greentree.jpg" width="180" height="120" alt="GreenTree Inn">
             <h3 class="hotel-card-name">GreenTree Inn</h3>
           </a>
           <span class="hotel-card-type">Гостиница</span>
@@ -207,12 +210,12 @@
   </main>    
   <footer>
     <article class="footer-messengers">
-      <a href="https://twitter.com/htmlacademy_ru"><img src="#" alt="иконка твиттер"></a>
-      <a href="facebook.com/htmlacademy"><img src="#" alt="иконка фейсбук"></a>
-      <a href="https://www.youtube.com/user/htmlacademyru"><img src="#" alt="иконка ютуб"></a>
+      <a href="https://twitter.com/htmlacademy_ru"><img src="img/icon/ikon-twitter.svg" width="18" height="15" alt="иконка твиттер"></a>
+      <a href="facebook.com/htmlacademy"><img src="img/icon/ikon-facebook.svg" wigth="10" height="18" alt="иконка фейсбук"></a>
+      <a href="https://www.youtube.com/user/htmlacademyru"><img src="img/icon/ikon-ytube.svg" width="20" height="16"  alt="иконка ютуб"></a>
     </article>
     <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-    <a href="https://htmlacademy.ru"><img src="#" alt="лого htmlacademy"></a> <!--Решил сделать лого в футере в виде ссылки-->
-  </footer> 
+    <a href="https://htmlacademy.ru"><img src="img/icon/logo-academy.svg" width="115" height="34" alt="лого htmlacademy"></a> <!--Решил сделать лого в футере в виде ссылки-->
+  </footer>
 </body>
 </html>

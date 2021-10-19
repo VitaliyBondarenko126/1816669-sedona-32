@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "ptsans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ptsans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "ptsans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    background-color: #F2F2F2;
+    color: #333333;
+    ;
+}
+
+.presentation {
+    background-image: url("/img/index-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.benefits-block {
+    background-color: #83B3D3;
+}
+
+.newsletter {
+    background-image: url(/img/photo-newsletter.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.option-hotels {
+    background-image: url(/img/catalog-background.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
