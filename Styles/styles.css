@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "ptsans";
+    font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
     src: url("fonts/ptsans-400.woff2") format("woff2");
@@ -7,40 +7,187 @@
 }
 
 @font-face {
-    font-family: "ptsans";
+    font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
     src: url("fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
 
+/*селекторы для кнопок*/
+.button {
+    font-family: PT Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    background-color: #756257;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    ;
+}
+
+.blue-color {
+    background-color: #83B3D3;
+}
+
+.green-color {
+    background-color: #7DB54F;
+    ;
+}
+
+/*общие селекторы + каталог*/
 body {
-    font-family: "ptsans", sans-serif;
-    font-size: 22px;
-    line-height: 26px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
     background-color: #F2F2F2;
     color: #333333;
     ;
 }
 
-.presentation {
+.navigation-link {
+
+font-size: 20px;
+font-weight: 700;
+line-height: 26px;
+text-align: left;
+color: #333333;
+text-decoration: none;
+}
+
+.promo-index {
     background-image: url("/img/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
+
+.divider{
+    background-image: url("/img/divider.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+
+.slogan {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    width: 720px;
+    height: 80px;
+}
+
+.benefits-slogan-text {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+
+}
+
+
 .benefits-block {
     background-color: #83B3D3;
+    color: #fff;
+    text-align: center;
+}
+
+.benefits-div, .search-catalog {
+    text-align: center;
+}
+
+.benefits-name {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase; 
+}
+
+
+.light-blue {
+    background-color: #83B3D31F;
+    ;
+}
+
+.search-catalog {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
 }
 
 .newsletter {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;   
     background-image: url(/img/photo-newsletter.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
 }
 
 .option-hotels {
     background-image: url(/img/catalog-background.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
+}
+
+.phone-number {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    color: inherit;
+    text-decoration: none;
+}
+/*дальше только специфичные селекторы для каталога*/
+
+.option-hotels {
+    background-image: url(/img/catalog-background.jpg);
+    color: #fff;
+}
+
+.option-hotels h1 {
+   font-size: 60px;
+   font-weight: 700;
+   line-height: 78px;
+   text-align: left;
+}
+
+.catalog-control-panel {
+   font-size: 30px;
+   font-weight: 700;
+   line-height: 39px;
+   text-align: left;
+   text-transform: uppercase;
+}
+
+.card-link {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+
+}
+
+.hotel-card span {
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 23px;
+   text-align: left;
+}
+
+.catalog-newsletter {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
 }
