@@ -146,6 +146,29 @@ text-decoration: none;
     color: inherit;
     text-decoration: none;
 }
+
+.house {
+    background-image: url(/img/icon/icon-house.svg);
+    background-size: width 75px height 72px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.eat {
+    background-image: url(/img/icon/icon-eat.svg);
+    background-size: width 74px height 70px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.present {
+    background-image: url(/img/icon/icon-present.svg);
+    background-size: width 64px height 76px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+}
+
 /*дальше только специфичные селекторы для каталога*/
 
 .option-hotels {
