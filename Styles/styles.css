@@ -57,14 +57,14 @@ text-decoration: none;
 }
 
 .promo-index {
-    background-image: url("/img/index-background.jpg");
+    background-image: url("../img/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
 
 .divider{
-    background-image: url("/img/divider.svg");
+    background-image: url("../img/divider.svg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -124,7 +124,7 @@ text-decoration: none;
     font-weight: 400;
     line-height: 26px;
     text-align: center;   
-    background-image: url("/img/photo-newsletter.jpg");
+    background-image: url("../img/photo-newsletter.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     color: #fff;
@@ -132,7 +132,7 @@ text-decoration: none;
 }
 
 .option-hotels {
-    background-image: url("/img/catalog-background.jpg");
+    background-image: url("../img/catalog-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -146,19 +146,19 @@ text-decoration: none;
 }
 
 .house {
-    background-image: url("/img/icon/icon-house.svg");
+    background-image: url("../img/icon/icon-house.svg");
     background-repeat: no-repeat;
     background-position: top center;
 }
 
 .eat {
-    background-image: url("/img/icon/icon-eat.svg");
+    background-image: url("../img/icon/icon-eat.svg");
     background-repeat: no-repeat;
     background-position: top center;
 }
 
 .present {
-    background-image: url("/img/icon/icon-present.svg");
+    background-image: url("../img/icon/icon-present.svg");
     background-repeat: no-repeat;
     background-position: top center;
 }
@@ -166,7 +166,7 @@ text-decoration: none;
 /*дальше только специфичные селекторы для каталога*/
 
 .option-hotels {
-    background-image: url("/img/catalog-background.jpg");
+    background-image: url("../img/catalog-background.jpg");
     color: #fff;
 }
 
