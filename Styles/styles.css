@@ -2,7 +2,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/ptsans-400.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -10,15 +10,13 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/ptsans-700.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
 
 /*селекторы для кнопок*/
 .button {
-    font-family: PT Sans;
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
     line-height: 36px;
     background-color: #756257;
@@ -149,24 +147,20 @@ text-decoration: none;
 
 .house {
     background-image: url(/img/icon/icon-house.svg);
-    background-size: width 75px height 72px;
     background-repeat: no-repeat;
     background-position: top center;
 }
 
 .eat {
     background-image: url(/img/icon/icon-eat.svg);
-    background-size: width 74px height 70px;
     background-repeat: no-repeat;
     background-position: top center;
 }
 
 .present {
     background-image: url(/img/icon/icon-present.svg);
-    background-size: width 64px height 76px;
     background-repeat: no-repeat;
     background-position: top center;
-}
 }
 
 /*дальше только специфичные селекторы для каталога*/
