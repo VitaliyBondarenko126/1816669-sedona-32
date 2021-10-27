@@ -48,7 +48,6 @@
 
 body {
     width: 1200px;
-    margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -57,6 +56,7 @@ body {
     line-height: 21px;
     background-color: #FFFFFF;
     color: #333333;
+    margin: 0 auto;
 }
 
  h2.visually-hidden, h1.visually-hidden {
@@ -126,7 +126,6 @@ body {
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
-    width: 720px;
     height: 80px;
 }
 
@@ -276,7 +275,10 @@ footer {
 
 /*дальше только специфичные селекторы для каталога*/
 
+
 .option-hotels {
+    display: flex;
+    width: 1200px;
     background-image: url("../img/catalog-background.jpg");
     color: #fff;
 }

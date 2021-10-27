@@ -43,10 +43,13 @@
         <h1 class="visually-hidden">Каталог Гостиниц Седоны</h1>
         <!--Секция с кретериями выбора гостиниц-->
         <section class="option-hotels">
-          <h1> Параметры выбора</h1>
+        <div>
+          <h1> Гостиницы Седоны</h1>
           <a href="index.html"><img class="hotels-logo" src="img/icon/ikon-house.svg" alt="Переход на главную"></a>
           <img src="img/icon/arrow.svg" width="5" height="8">
           </a><span class="active-page">Гостиницы</span>
+        </div>
+        <div>
           <form class="option-hotels-group" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="option-hotels-title">
               <legend>Инфраструктура:</legend>
@@ -54,12 +57,16 @@
               <label><input type="checkbox" name="Parking" checked>Парковка</label>
               <label><input type="checkbox" name="Wi-Fi">Wi-Fi</label>
             </fieldset>
+          </div>
+          <div>
             <fieldset class="option-hotels-title">
               <legend>Тип жилья:</legend>
               <label><input type="radio" name="type-of-housing" checked>Гостиница</label>
               <label><input type="radio" name="type-of-housing">Мотель</label>
               <label><input type="radio" name="type-of-housing">Аппартаменты</label>
           </fieldset>
+        </div>
+        <div>
             <fieldset class="Price">
               <legend>Стоимость,₽</legend>
               <button class="range-toggle toggle-min" type="button">
@@ -72,6 +79,8 @@
              <input class="catalog-filter-input" type="number" name="max-price" value="9000">
             </fieldset>
           </form>
+        </div>
+        <div>
           <form>
             <input class="button blue-color" type="button" value="Применить">
             <input type="button" value="Сбросить">
