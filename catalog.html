@@ -19,11 +19,10 @@
           <a class="navigation-link" href="catalog.html">Гостиницы Седоны</a> 
         </li>
       </ul>
-    </nav>
-    <div class="head-logo"><!--отдельный див для маленького лого в центре хедера-->
+      <div class="head-logo"><!--отдельный див для маленького лого в центре хедера-->
       <a href="index.html"><img src="img/icon/logo-header.svg" alt="Картинка-Логотип"></a>
-    </div>
-    <section class="user-menu"><!--Секция в хедере для поиска,отзывов и кнопки("user-menu" пока рабочее название, лучше ничего не придумал)-->
+      </div>
+      <section class="user-menu"><!--Секция в хедере для поиска,отзывов и кнопки("user-menu" пока рабочее название, лучше ничего не придумал)-->
       <h2 class="visually-hidden">Меню пользователя</h2>
       <ul class="user-menu-list">
         <li class="user-menu-item">
@@ -33,12 +32,14 @@
           <a class="user-menu-link" href="#"><span class="visually-hidden">Отзывы</span></a>
         </li>
         <li class="user-menu-item">
-          <a class="user-menu-link button" href="#">Хочу сюда!</a>
+          <a class="user-menu-link-buttom" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </section>
-      </header>
-      <main>
+  </nav>
+  </header>
+      <main class="main-container">
+        <div class="page-container">
         <h1 class="visually-hidden">Каталог Гостиниц Седоны</h1>
         <!--Секция с кретериями выбора гостиниц-->
         <section class="option-hotels">
@@ -200,15 +201,17 @@
         </form>
       </div>
       <section class="catalog-newsletter">
-        <h2 class="visually-hidden">Подписка на рассылку</h2>
-          <b class="newsletter-name slogan">Подпишитесь на рассылку</b>
+        <div>
+          <h2 class="visually-hidden">Подписка на рассылку</h2>
+          <b class="slogan" >Подпишитесь на рассылку</b>
           <p class="newsletter-text">Только полезная информация и никакого спама,честное бойскаутское!</p>
           <form class="newsletter-form" action="https://htmlacademy.ru" method="GET">
             <input type="email" name="user-mail" value="Ваш e-mail">
             <input type="submit" value="подписаться">
           </form>
-        </form>
-      </section>
+        </div>
+        </section>
+      </div>>
   </main>    
   <footer>
     <article class="footer-messengers">
