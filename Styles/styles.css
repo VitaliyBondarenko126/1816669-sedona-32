@@ -67,13 +67,13 @@ body {
     display: flex;
     width: 1200px;
     flex-direction: row;
-    justify-content:space-around;
    
 }
 
 .navigation-list {
     width: 310px;
     margin-right: auto;
+    padding: 0;
 }
 
 .head-logo{
@@ -83,7 +83,8 @@ body {
 
 .user-menu {
     width: 250px;
-    margin-left: auto;
+    margin-left: 209px;
+
 }
 
 .navigation-link {
@@ -279,10 +280,27 @@ footer {
 }
 /*дальше только специфичные селекторы для каталога*/
 
-
-.option-hotels {
+.option-hotels-container {
     display: flex;
     width: 1200px;
+    flex-direction: row;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.option-hotels-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0;
+    margin: 0;
+}
+
+.option-hotels a:nth-child(1) {
+    background-image: url("../img/icon/logo-home-page.svg")
+}
+
+.option-hotels-title {
     background-image: url("../img/catalog-background.jpg");
     color: #fff;
 }
@@ -292,14 +310,37 @@ footer {
    font-weight: 700;
    line-height: 78px;
    text-align: left;
+   color: #fff;
+   margin: 0px;
 }
 
 .catalog-control-panel {
+   display: flex;
+   width: 1057px;
+   justify-content: space-around;
+   margin: 0 auto;
    font-size: 30px;
    font-weight: 700;
    line-height: 39px;
    text-align: left;
    text-transform: uppercase;
+}
+
+.hotels-group {
+    display: flex;
+    flex-direction: column;
+    width: 1057px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.hotel-card {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    width: 1057px;
+    justify-content: space-around;
+   
 }
 
 .card-link {
@@ -317,6 +358,41 @@ footer {
    font-weight: 400;
    line-height: 23px;
    text-align: left;
+}
+
+.pagination-show-more-container {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center ;
+}
+
+.pagination-show-more-container button {
+    width: 625px;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center ;
+}
+
+.pagination-container {
+    display: flex;
+    width: 1056px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.pagination-container ul {
+    display: flex;
+    width: 300px;
+    padding: 0;
+    justify-content: space-around; 
+}
+
+.pagination-container .output {
+    display: flex;
+    width: 390px;
+    padding: 0;
+    justify-content: space-around;
 }
 
 .catalog-newsletter {

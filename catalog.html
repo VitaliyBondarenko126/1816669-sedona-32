@@ -43,13 +43,11 @@
         <h1 class="visually-hidden">Каталог Гостиниц Седоны</h1>
         <!--Секция с кретериями выбора гостиниц-->
         <section class="option-hotels">
-        <div>
           <h1> Гостиницы Седоны</h1>
-          <a href="index.html"><img class="hotels-logo" src="img/icon/ikon-house.svg" alt="Переход на главную"></a>
-          <img src="img/icon/arrow.svg" width="5" height="8">
-          </a><span class="active-page">Гостиницы</span>
-        </div>
-        <div>
+          <a href="index.html"><span class="visually-hidden"> переход на главную</span></a>
+          <a href="catalog.html">Гостиницы</a>
+        <div class="option-hotels-container">
+          <div>
           <form class="option-hotels-group" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="option-hotels-title">
               <legend>Инфраструктура:</legend>
@@ -90,7 +88,7 @@
       <!-- Секция с параметрами сортировки и отображения каталога-->
       <section class="catalog-control-panel">
         <h2 class="visually-hidden">Параметры сортировки каталога</h2>
-        <b class="derectory-header">Количество гостиниц на странице: 38</b>
+        <b class="derectory-header">Найдено Гостиниц: 38</b>
         <form class="sorting-type">
           <select class="sorting-control">
             <option class="low-price">Сначала дешевые</option>
@@ -98,8 +96,8 @@
             <option class="top-reiting">По рейтингу</option>
             <option class="top-stars">По количеству звезд</option>
           </select>
-          <button class="visually-hidden" type="submit">Отсортировать продукты</button>
         </form>
+      <div>
         <a class="button-net" href="#">
           <span class="visually-hidden">Сетка</span>
         </a>
@@ -109,6 +107,7 @@
         <a class="button-list" href="#">
           <span class="visually-hidden">Список</span>
         </a>
+      </div>
       </section>
       <!--дальше идет сам каталог, список с блоками гостиниц-->
       <section class="hotels-group">
@@ -165,7 +164,10 @@
           </form>
         </div>
       </section>
+      <div class="pagination-show-more-container">
       <button class="button pagination-show-more blue-color" type="button">Загрузить еще</button>
+      </div>
+      <div class="pagination-container">
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current button blue-color" href="#">1</a>
@@ -180,19 +182,7 @@
           <a class="pagination-link button blue-color" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link button blue-color" href="#">5</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link button blue-color" href="#">6</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link button blue-color" href="#">7</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link button blue-color" href="#">8</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link button blue-color" href="#">9</a>
+          <a class="pagination-link button blue-color" href="#">...</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link button blue-color" href="#">10</a>
@@ -209,6 +199,7 @@
           </select>
         </form>
       </div>
+       </div>
       <section class="catalog-newsletter">
         <div>
           <h2 class="visually-hidden">Подписка на рассылку</h2>
@@ -220,7 +211,7 @@
           </form>
         </div>
         </section>
-      </div>>
+      </div>
   </main>    
   <footer>
     <article class="footer-messengers">
