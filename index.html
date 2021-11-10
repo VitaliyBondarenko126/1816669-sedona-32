@@ -7,35 +7,35 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="page-navigation"> <!--Навигация-->
+      <!--Навигация-->
+      <nav class="page-navigation"> 
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a><!--Здесь будет ссылка на страницу "о нас"-->
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы Седоны</a> 
+            <a class="navigation-link" href="catalog.html">Гостиницы</a> 
           </li>
         </ul>
-        <div class="head-logo"><!--отдельный див для маленького лого в центре хедера-->
+        <!--отдельный див для маленького лого в центре хедера-->
+        <div class="head-logo">
         <a href="index.html"><img src="img/icon/logo-header.svg" alt="Картинка-Логотип"></a>
         </div>
-        <section class="user-menu"><!--Секция в хедере для поиска,отзывов и кнопки("user-menu" пока рабочее название, лучше ничего не придумал)-->
-        <h2 class="visually-hidden">Меню пользователя</h2>
+        <!--Секция в хедере для поиска,отзывов и кнопки-->
         <ul class="user-menu-list">
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#"><span class="visually-hidden">Поисковая строка</span></a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><span class="visually-hidden">Поисковая строка</span></a>
           </li>
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#"><span class="visually-hidden">Отзывы</span></a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><span class="visually-hidden">Отзывы</span></a>
           </li>
-          <li class="user-menu-item">
-            <a class="user-menu-link-buttom" href="#">Хочу сюда!</a>
+          <li class="navigation-item">
+            <a class="navigation-link button" href="#">Хочу сюда!</a>
           </li>
         </ul>
-      </section>
     </nav>
     </header>
     <main class="main-container">
@@ -44,7 +44,7 @@
       <section class="promo-index">
         <h2 class="visually-hidden">Презентация Городка</h2>
         <img class="index-logo" src="img/icon/welcome.svg"  width="458" height="352" alt="Городок Седона">
-        <div class="divider"><p class="visually-hidden">Вставка для вектора</p></div>
+        <div class="divider"></div>
       </section>
       <section class="benefits">
         <div class="benefits-container">
@@ -52,8 +52,9 @@
         <p class="slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="benefits-slogan-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
-        <article class="benefits-block"><!--Отдельный класс для преимущества с понорамным фото-->
-         <div>
+        <!--Отдельный класс для преимущества с понорамным фото-->
+        <article class="benefits-block">
+         <div class="benefits-block-info">
           <h3 class="benefits-name">Настоящий городок</h3>
           <span class="benefits-number">-№1-</span>
           <p class="benefits-text">Седона — не аттракцион для туристов, там течёт 
@@ -64,25 +65,27 @@
           </div>
         </article>
           <div class="benefits-div-list">
-            <div class="benefits-div-items house light-blue"><!--Отдельный класс для преимуществ с картинкой-->
-              <h3 class="benefits-name">Жилье</h3>
+            <!--Отдельный класс для преимуществ с картинкой-->
+            <div class="benefits-div-items house light-blue">
+              <h3 class="benefits-name benefits-div-name">Жилье</h3>
               <p class="benefits-text">Рекомендуем пожить 
-                в настоящем мотеле, 
+                в настоящем мотеле,  
                 всё как в кино!</p>
             </div>
-            <div class="benefits-div-items eat"><!--Отдельный класс для преимуществ с картинкой-->
-              <h3 class="benefits-name">Еда</h3>
+            <div class="benefits-div-items eat">
+              <h3 class="benefits-name benefits-div-name">Еда</h3>
               <p class="benefits-text">Всегда заказывайте
                 топовый фирменный бургер, вы не разочаруетесь!</p>
             </div>
-            <div class="benefits-div-items light-blue present"><!--Отдельный класс для преимуществ с картинкой-->
-              <h3 class="benefits-name">Сувениры</h3>
+            <div class="benefits-div-items light-blue present">
+              <h3 class="benefits-name benefits-div-name">Сувениры</h3>
               <p class="benefits-text">Не только китайского, 
                 но и настоящего местного производства!</p>
             </div>
           </div>
-            <article class="benefits-block"><!--Отдельный класс для преимущества с понорамным фото-->
-              <div>
+          <!--Отдельный класс для преимущества с понорамным фото-->
+            <article class="benefits-block">
+              <div class="benefits-block-info">
               <h3 class="benefits-name">Там есть
                 мост дьявола</h3>
               <span class="benefits-number">-№2-</span>
@@ -92,53 +95,54 @@
               <img class="benefits-block-foto" src="img/photo-bridge.jpg" width="800" height="384" alt="Фото каменного моста дьявола">
             </div>
             </article>
+            <!--преимущества без картинки, с номером-->
           <div class="benefits-div-list">
-            <div class="benefits-div-items light-blue"><!--преимущества без картинки, с номером-->
+            <div class="benefits-div-items light-blue">
               <h3 class="benefits-name">Небольшая площадь</h3>
               <span class="benefits-number">-№3-</span>
               <p class="benefits-text">Все достопримечательности 
                 находятся очень близко</p>
             </div>
-            <div class="benefits-div-items light-blue"><!--преимущества без картинки, с номером-->
+            <div class="benefits-div-items light-blue">
               <h3 class="benefits-name">Красивая дорога</h3>
               <span class="benefits-number">-№4-</span>
               <p class="benefits-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
-            <div class="benefits-div-items light-blue"><!--преимущества без картинки, с номером-->
+            <div class="benefits-div-items light-blue">
               <h3 class="benefits-name">Мало туристов</h3>
               <span class="benefits-number">-№5-</span>
               <p class="benefits-text">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
+          </section>
           </div>
-        <section class="search-catalog"><!--Поиск по каталогу,не уверен что название подходящее, но лучше пока не придумал-->
+          <!--Поиск по каталогу-->
+        <section class="search-catalog">
           <h2 class="visually-hidden">Забронируйте отель уже сейчас</h2>
           <b class="slogan">Заинтересовались?</b>
-          <p class="search-catalog-text">Укажите предполагаемые даты поездки,
+          <p class="text">Укажите предполагаемые даты поездки,
             и мы покажем вам лучшие предложения гостиниц в Седоне.
           </p>
-          <a class="button"><p>Поиск гостиницы в Седоне</p></a>
+          <a class="button">Поиск гостиницы в Седоне</a>
         </section>
         <section class="newsletter">
-          <div>
           <h2 class="visually-hidden">Подписка на рассылку</h2>
           <b class="slogan" >Подпишитесь на рассылку</b>
-          <p class="newsletter-text">Только полезная информация и никакого спама,честное бойскаутское!</p>
-          <form class="newsletter-form" action="https://htmlacademy.ru" method="GET">
-            <input type="email" name="user-mail" value="Ваш e-mail">
-            <input type="submit" value="подписаться">
+          <p class="text">Только полезная информация и никакого спама,честное бойскаутское!</p>
+          <form class="form" action="https://htmlacademy.ru" method="GET">
+            <input class="email" type="email" name="user-mail" value="Ваш e-mail">
+            <input class="submit button blue-color" type="submit" value="подписаться">
           </form>
-        </div>
-        </section>
+          </section>
       </div>
     </main>  
     <footer>
       <article class="footer-messengers">
-        <a href="https://twitter.com/htmlacademy_ru"><img src="img/icon/icon-twitter.svg" width="18" height="15" alt="иконка твиттер"></a>
-        <a href="facebook.com/htmlacademy"><img src="img/icon/icon-facebook.svg" wigth="10" height="18" alt="иконка фейсбук"></a>
-        <a href="https://www.youtube.com/user/htmlacademyru"><img src="img/icon/icon-ytube.svg" width="20" height="16"  alt="иконка ютуб"></a>
+        <a class="item-messengers" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden"></span></a>
+        <a class="item-messengers" href="facebook.com/htmlacademy"><span class="visually-hidden"></span></a>
+        <a class="item-messengers" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden"></span></a>
       </article>
       <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a href="https://htmlacademy.ru"><img src="img/icon/logo-academy.svg" width="115" height="34" alt="лого htmlacademy"></a> <!--Решил сделать лого в футере в виде ссылки-->
+      <a class="logo-footer" href="https://htmlacademy.ru"><span class="visually-hidden"></span></a> 
     </footer>
   </body>
 </html>

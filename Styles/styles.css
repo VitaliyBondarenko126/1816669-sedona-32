@@ -39,12 +39,6 @@
 
 /*главная страница +общие селекторы для обеих страниц*/
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
 
 body {
     width: 1200px;
@@ -59,65 +53,98 @@ body {
     margin: 0 auto;
 }
 
- h2.visually-hidden, h1.visually-hidden {
-    display: none;    
-}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 .page-navigation {
     display: flex;
     width: 1200px;
-    flex-direction: row;
-   
-}
-
-.navigation-list {
-    width: 310px;
-    margin-right: auto;
-    padding: 0;
-}
-
-.head-logo{
-    width: 140px;
-    margin: 0;
-}
-
-.user-menu {
-    width: 250px;
-    margin-left: 209px;
-
-}
-
-.navigation-link {
-
+    justify-content: space-between;
+    align-items: center;
+    font-family: PT Sans;
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
-    text-align: left;
-    color: #333333;
-    text-decoration: none;
+
 }
 
-.page-container {
-    margin: 0 auto;
-    width: 1200px;
+.navigation-list {
+    display: flex;
+    width: 310px;
+    padding: 0;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-left: 70px;
+}
+
+.navigation-link {
+    display: block;
+    color: #333333;
+    text-decoration: none;
+    padding: 20px 0px;
+    margin: 0;
+    
+
+}
+.head-logo{
+    width: 138px;
+    margin: 0px 210px 0px 150px ;
+    padding: 0;
+}
+
+.user-menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 290px;
+    padding: 0;
+    margin: 0;
+    margin-right: 70px;
+    list-style-type: none;
+}
+
+.navigation-link.button {
+    color: #ffffff;
+    padding: 10px 50px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .promo-index {
     background-image: url("../img/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .index-logo {
     display: block;
     width: 458px;
     margin: 0 auto;
+    padding-bottom: 25px;
 
 }
 
 .divider{
     background-image: url("../img/divider.svg");
-    background-size: 100% auto;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -127,42 +154,19 @@ body {
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
-    height: 80px;
 }
 
 .benefits {
     display: flex;
-    flex-direction: row;
-    width: 1200px;
+    flex-grow: 1;
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
-.benefits-container {
-    width: 720px;
-    margin: 0 auto;
-}
-
-.benefits-block {
-    display: flex;
-    background-color: #83B3D3;
-    color: #fff;
-    text-align: center;
-    
-}
-
-.benefits-block:nth-child(2) {
-    flex-direction: row-reverse;
-}
-
-.benefits-block div:nth-child(1) {
-    width: 400px;
-}
-
-.benefits-block div:nth-child(2) {
-    width: 800px;
+.benefits .slogan {
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 .benefits-slogan-text {
@@ -170,33 +174,51 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
+    margin-bottom: 80px;
 
 }
 
+.benefits-container {
+    width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*Стили для блоков с фото*/
+.benefits-block {
+    display: flex;
+    background-color: #83B3D3;
+    color: #fff;
+    flex-grow: 1;
+    height: 384px;
+}
+
+.benefits-block-info {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    width: 220px;
+}
+
+/*Стили для блоков со значками*/
 .benefits-div-list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 0;
+    min-height: 384px;
     width: 1200px;
-    text-align: center;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
 }
 
 .benefits-div-items {
     display: flex;
     flex-direction: column;
-    width: 250px;
-    padding: 0 75px;
-}
-
-.search-catalog {
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 26px;
+    justify-content: center;
     text-align: center;
-    display: flex;
-    width: 720px;
+    padding: 0px;
+    margin: 0px;
+    width: 400px;
 }
 
 .benefits-name {
@@ -206,6 +228,72 @@ body {
     text-transform: uppercase; 
 }
 
+.benefits-name.benefits-div-name {
+    padding: 0;
+    margin: 100px auto 20px auto;
+    width: 200px;
+}
+
+.benefits-text {
+    width: 240px;
+    margin: 0px auto 0px auto;
+}
+
+.benefits-number {
+    padding-bottom: 25px;
+}
+ 
+.house {
+    background-image: url("../img/icon/icon-house.svg");
+    background-repeat: no-repeat;
+    background-position: top 30%  left 50%;
+}
+
+.eat {
+    background-image: url("../img/icon/icon-eat.svg");
+    background-repeat: no-repeat;
+    background-position: top 30%  left 50%;
+}
+
+.present {
+    background-image: url("../img/icon/icon-present.svg");
+    background-repeat: no-repeat;
+    background-position: top 30%  left 50%;
+}
+
+.search-catalog {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.search-catalog .slogan {
+    padding: 0;
+    margin-top: 90px;
+    margin-bottom: 30px;
+} 
+
+.search-catalog .text {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.search-catalog .button {
+    display: block;
+    width: 575px;
+    text-align: center;
+    padding: 15px 0px;
+    margin: 0;
+    margin-bottom: 90px;
+}
 
 .light-blue {
     background-color: #83B3D31F;
@@ -214,7 +302,7 @@ body {
 
 .newsletter {
     display: flex;
-    width: 1200px;
+    width: 100%;
     flex-direction: column;
     font-size: 22px;
     font-weight: 400;
@@ -224,8 +312,24 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     color: #fff;
-    text-align: center;
-    
+}
+
+.newsletter .slogan {
+    padding: 0;
+    margin: 90px 0px 30px 0px;
+}
+
+.newsletter .text {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+
+.newsletter .email {
+    margin: 0;
+    margin-bottom: 90px;
+    width: 600px;
+    height: 60px;
 }
 
 .option-hotels {
@@ -234,49 +338,45 @@ body {
     background-repeat: no-repeat;
 }
 
+footer {
+    display: flex;
+    padding: 40px 70px 30px 70px;
+    margin: 0px;
+}
+
+.footer-messengers {
+    width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer-messengers .item-messengers {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.item-messengers:nth-child(3n) {
+    margin-right: 0;
+}
+
 .phone-number {
     font-size: 40px;
     font-weight: 400;
     line-height: 40px;
-    color: inherit;
+    color: #000000;
     text-decoration: none;
+    margin-left: 180px;
 }
 
-.house {
-    background-image: url("../img/icon/icon-house.svg");
-    background-repeat: no-repeat;
-    background-position: top center;
-}
-
-.eat {
-    background-image: url("../img/icon/icon-eat.svg");
-    background-repeat: no-repeat;
-    background-position: top center;
-}
-
-.present {
-    background-image: url("../img/icon/icon-present.svg");
-    background-repeat: no-repeat;
-    background-position: top center;
-}
-
-.search-catalog {
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    margin: 0 auto;
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    width: 1200px;
-    justify-content: space-around;
-}
-
-.search-catalog a {
-    width: 575px;
-    height: 60px;
+.logo-footer {
+    width: 120px;
+    height: 35px;
 }
 /*дальше только специфичные селекторы для каталога*/
 
@@ -316,15 +416,41 @@ footer {
 
 .catalog-control-panel {
    display: flex;
-   width: 1057px;
-   justify-content: space-around;
-   margin: 0 auto;
+   margin: 43px 70px;
+   padding: 0;
    font-size: 30px;
    font-weight: 700;
    line-height: 39px;
    text-align: left;
    text-transform: uppercase;
 }
+
+.sorting-type {
+    margin-left: 190px;
+    margin-right: 80px;
+}
+
+.sorting-control {
+    width: 287px;
+    height: 48px;
+}
+
+.sorting-list {
+    display: flex;
+    width: 154px;
+    padding-right: 0px;
+}
+
+.sorting-items {
+    width: 48px;
+    height: 48px;
+}
+
+.sorting-items:nth-child(2) {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 
 .hotels-group {
     display: flex;
@@ -360,11 +486,18 @@ footer {
    text-align: left;
 }
 
-.pagination-show-more-container {
-    display: flex;
+.show-more-container {
+    text-align: center;
+    padding: 30px 287px;
+    border-bottom: solid lightgrey 1px;
+}
+
+.show-more-container button {
+    width: 625px;
+    height: 55px;
     margin: 0 auto;
     padding: 0;
-    justify-content: center ;
+   
 }
 
 .pagination-show-more-container button {
@@ -376,28 +509,76 @@ footer {
 
 .pagination-container {
     display: flex;
-    width: 1056px;
-    margin: 0 auto;
-    justify-content: space-around;
+    margin-top: 31px;
 }
 
-.pagination-container ul {
+.pagination {
     display: flex;
-    width: 300px;
     padding: 0;
-    justify-content: space-around; 
+    margin: 0; 
+    list-style-type: none;
+    margin-right: 300px;
+    min-width: 55px;
+}
+
+.pagination .pagination-item {
+    width: 55px;
+    height: 55px;
+    padding: 0px;
+    margin-right: 8px;
+}
+
+.pagination-link {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
 .pagination-container .output {
     display: flex;
     width: 390px;
     padding: 0;
-    justify-content: space-around;
+    margin: 0;
+    justify-self: center;
 }
 
+.output-span {
+    padding-right: 55px;
+}
+
+.output-list {
+   width: 160px;
+   height: 48px;
+
+}
+
+
 .catalog-newsletter {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
-    text-align: center;
+    text-align: center;   
+}
+
+.catalog-newsletter .slogan {
+    padding: 0;
+    margin: 90px 0px 30px 0px;
+}
+
+.catalog-newsletter .text {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+
+.catalog-newsletter .email {
+    margin: 0;
+    margin-bottom: 90px;
+    width: 600px;
+    height: 60px;
 }
